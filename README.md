@@ -14,6 +14,10 @@ Este é um projeto simples, para demonstrar a funcionalidade na pratica de tabel
 
 Este projeto não viza nenhum tipo de lucro, é um projeto somente de estudo sobre a tecnologia.
 
+### Depedencias 
+ - .NET 9.0
+ - Entity Framework 9.0.10
+ - 
 
 ## Getting started
 
@@ -24,10 +28,20 @@ Para iniciar o projeto, altere a connection string com base no seu SQL Server, d
 	Data Source="Servidor";Initial Catalog="Nome da Tabela";User Id="Usuario";Password="Senha";Encrypt=False
 ```
 
+Instale a CLI do Entity Framework Core com o seguinte comando no terminal:
+```
+	dotnet tool install -g dotnet-ef --version 9.0.11
+```
+
+Caso não exporte automaticamente a variavel de ambiente, exporte ela com o seguinte comando no Linux e macOS:
+```
+	export PATH="$PATH:/home/user/.dotnet/tools"
+```
+
 Depois, rode o comando para executar a migration no seu banco de dados: 
 
 ```
-	dotnet ef update database
+	dotnet ef database update
 ```
 
 Após feita a migração, rode o projeto com:
