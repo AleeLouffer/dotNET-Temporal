@@ -14,11 +14,6 @@ Este é um projeto simples, para demonstrar a funcionalidade na pratica de tabel
 
 Este projeto não viza nenhum tipo de lucro, é um projeto somente de estudo sobre a tecnologia.
 
-### Depedencias 
- - .NET 9.0
- - Entity Framework 9.0.10
- - 
-
 ## Getting started
 
 ### Linux, macOS, Windows (VSCode)
