@@ -21,13 +21,24 @@ Este projeto não viza nenhum tipo de lucro, é um projeto somente de estudo sob
 Para iniciar o projeto, altere a connection string com base no seu SQL Server, deve ficar assim: 
 
 ```json
-  Data Source="Servidor";Initial Catalog="Nome da Tabela";User Id="Usuario";Password="Senha";Encrypt=False
+	Data Source="Servidor";Initial Catalog="Nome da Tabela";User Id="Usuario";Password="Senha";Encrypt=False
 ```
 
 Depois, rode o comando para executar a migration no seu banco de dados: 
 
 ```
-  dotnet ef update database
+	dotnet ef update database
+```
+
+Após feita a migração, rode o projeto com:
+```
+	dotnet watch
+```
+
+Se a pagina com scalar não abrir automaticamente, abra a rota
+
+```
+	/scalar
 ```
 
 ### Windows (Visual Studio 2019+)
@@ -35,15 +46,20 @@ Depois, rode o comando para executar a migration no seu banco de dados:
 Para iniciar o projeto, sua connection string deve estar assim:
 
 ```json
-  Data Source=localhost\SQLEXPRESS;Initial Catalog=TemporalTest;Integrated Security=SSPI;
+	Data Source=localhost\SQLEXPRESS;Initial Catalog=TemporalTest;Integrated Security=SSPI;
 ```
 
-Depois, abra o terminal e rode a migration:
+Depois, abra o Package Manager e execute o comando:
 
 ```
-  dotnet ef update database
+	Update-Database
 ```
 
+Se a pagina com scalar não abrir automaticamente, abra a rota
+
+```
+	/scalar
+```
 
 ## Documentação da API
 
